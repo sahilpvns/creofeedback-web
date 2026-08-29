@@ -14,7 +14,7 @@
 
   <meta name="theme-color" content="#6C5CE7" />
 
-  <link rel="icon" type="image/png" href="creo_logo.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="creo_logo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,7 +58,10 @@
     }
     a { text-decoration: none; color: inherit; }
     button { font-family: inherit; }
-    .container { width: min(100% - 32px, var(--container)); margin: auto; }
+    .container {
+      width: min(100% - 24px, var(--container));
+      margin: auto;
+    }
 
     /* ============ NAVBAR ============ */
     .navbar {
@@ -70,8 +73,19 @@
       backdrop-filter: blur(18px);
       box-shadow: 0 5px 25px rgba(0,0,0,.06);
     }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
-    .logo { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 800; }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: -4px;
+      font-size: 20px;
+      font-weight: 800;
+    }
     .logo-icon {
       width: 40px; height: 40px; display: grid; place-items: center;
       border-radius: 12px; box-shadow: 0 8px 22px rgba(108,92,231,.3);
